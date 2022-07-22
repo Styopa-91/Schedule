@@ -6,7 +6,7 @@
     "prettier/react",
     "plugin:react/recommended"
   ],
-  "plugins": ["prettier", "import"],
+  "plugins": ["prettier", "sonarjs", "import"],
   "env": {
     "browser": true,
     "jasmine": true,
