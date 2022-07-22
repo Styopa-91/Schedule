@@ -7,7 +7,7 @@ on:
     types: [opened, synchronize, reopened]
 jobs:
   build:
-    name: Build & Sonar
+    name: Build & Sonar analysis
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
