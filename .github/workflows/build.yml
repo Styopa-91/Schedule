@@ -38,14 +38,7 @@ jobs:
         if: always()
         with:
           report_paths: '**/build/test-results/test/TEST-*.xml'
-      - name: Test coverage report
-        uses: madrapps/jacoco-report@v1.2
-        with:
-          title: Test coverage report
-          min-coverage-overall: 50
-          min-coverage-changed-files: 70
-          token: ${{ secrets.GITHUB_TOKEN }}
-          paths: build/reports/jacoco/test/jacocoTestReport.xml
+      
       - name: Code style report
         uses: jwgmeligmeyling/checkstyle-github-action@master
         with:
